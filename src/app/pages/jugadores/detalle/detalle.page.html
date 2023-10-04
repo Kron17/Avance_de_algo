@@ -1,0 +1,29 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/login"></ion-back-button>
+    </ion-buttons>
+    <ion-title>detalle</ion-title>
+    <ion-buttons slot="end">
+      <ion-icon (click)="deleteJugador()" name="trash-outline"></ion-icon>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <img alt="Silhouette of mountains" src="{{ jugador.imagen }}" />
+    <ion-card-header>
+      <ion-card-title>{{ jugador.nombre }}</ion-card-title>
+      <ion-card-subtitle>{{ jugador.fecha }}</ion-card-subtitle>
+    </ion-card-header>
+  
+    <ion-card-content>
+      {{ jugador.descripcion }}
+    </ion-card-content>
+  
+    <div class="centrado">
+      <ion-button class="btnVerMas" [routerLink]="['/detalle']" shape="round">Ver más...</ion-button>
+    </div>
+  </ion-card>
+</ion-content>

@@ -1,0 +1,30 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>home</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  
+  <app-card [cantidad]="0" [mostrarBoton]="false" titulo="Koby Bryant" fecha="1978 - 2020" descripcion="Kobe Bean Bryant fue un baloncestista estadounidense que jugaba en la posición de escolta. Disputó veinte temporadas en la NBA, todas ellas en Los Angeles Lakers. Hijo del exjugador de baloncesto Joe Bryant, ​está considerado como uno de los mejores baloncestistas de todos los tiempos."></app-card>
+  
+  <ion-fab slot="fixed" vertical="bottom" horizontal="end">
+    <ion-fab-button>
+      <ion-icon name="chevron-up-circle"></ion-icon>
+    </ion-fab-button>
+    <ion-fab-list side="top">
+      <ion-fab-button>
+        <ion-icon name="document"></ion-icon>
+      </ion-fab-button>
+      <ion-fab-button>
+        <ion-icon name="color-palette"></ion-icon>
+      </ion-fab-button>
+      <ion-fab-button>
+        <ion-icon name="globe"></ion-icon>
+      </ion-fab-button>
+    </ion-fab-list>
+  </ion-fab>
+</ion-content>
